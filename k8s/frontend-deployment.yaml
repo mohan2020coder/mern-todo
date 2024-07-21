@@ -28,4 +28,10 @@ spec:
             - containerPort: 3000
               hostPort: 3000
               protocol: TCP
+          env:
+            - name: REACT_APP_BACKEND_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: frontend-config
+                  key: BACKEND_URL
       restartPolicy: Always
