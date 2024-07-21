@@ -25,7 +25,7 @@ spec:
         - env:
             - name: MONGO_URI
               value: mongodb://mongo:27017/mern-todo
-          image: backend
+          image: monihub/backend
           name: backend
           ports:
             - containerPort: 5000

@@ -22,7 +22,7 @@ spec:
         io.kompose.service: frontend
     spec:
       containers:
-        - image: frontend
+        - image: monihub/frontend
           name: frontend
           ports:
             - containerPort: 3000
